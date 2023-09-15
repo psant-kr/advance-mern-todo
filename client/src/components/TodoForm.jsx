@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 
 const TodoForm = () => {
-
+    // eslint-disable-next-line
     const [text, setText] = useState('')
 
     const onFormSubmit = () => {
 
     };
+
     const onFormChange = (e) => {
         // console.log(e.target.value);
         setText(e.target.value);
     };
-   
+
 
     return (
         <form
