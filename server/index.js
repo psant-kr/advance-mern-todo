@@ -8,4 +8,4 @@ const PORT=8000;
 
 Connection();
 
-app.listen(PORT,()=>console.log(`Your server is running on PORT ${PORT}`));
+app.listen(PORT,()=>console.log(`Your server is running sucessfully on PORT ${PORT}`));
