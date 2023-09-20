@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addNewTodo } from '../redux/actions';
 
 const TodoForm = () => {
     // eslint-disable-next-line
-    const [text, setText] = useState('')
+    const [text, setText] = useState('');
+    const dispatch = useDispatch();
 
-    const onFormSubmit = () => {
-
+    const onFormSubmit = (e) => {
+        e.preventDefault();
+        dispatch(addNewTodo(text));
     };
 
     const onFormChange = (e) => {
