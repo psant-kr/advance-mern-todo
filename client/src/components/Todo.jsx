@@ -1,11 +1,12 @@
-
+import { FaTrash, FaEdit } from 'react-icons/fa';
 
 const Todo = ({ todo }) => {
     return (
 
         <li>
             <span>{todo.data}</span>
-            <span> <i class="fa-solid fa-trash"></i> </span>
+            <span> <FaTrash /> </span>
+            <span><FaEdit /></span>
         </li>
     )
 }
